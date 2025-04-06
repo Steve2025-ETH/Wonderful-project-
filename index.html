@@ -1,103 +1,107 @@
+<!-- Main page structure, trying my best :) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Qian Zhou's Personal Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 20px;
-            padding: 0;
-        }
+ <meta charset="UTF-8">
+ <title>Qian Zhou's Personal Page</title>
+ <style>
+     body {
+         font-family: Arial, sans-serif;
+         background-color: #f9f9f9;
+         color: #333;
+         margin: 20px; padding: 0;
+     }
 
-        header, footer {
-            background-color: #eeeeee;
-            padding: 20px;
-            text-align: center;
-        }
+     header,
+     footer {
+       background-color: #eeeeee;
+       padding: 20px;
+       text-align: center;
+     }
 
-        h1, h2 {
-            color: #2a6592;
-        }
+     h1, h2 {
+        color: #2a6592; 
+     }
 
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
-        }
+     ul {
+       list-style-type: square;
+       margin-left: 25px;
+     }
 
-        .centered {
-            text-align: center;
-        }
+     .center-box {
+         text-align:center;
+     }
 
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
+     a {
+         color:#007acc;
+         text-decoration:none;
+     }
 
-        .code-block {
-            background-color: #1e1e1e;
-            color: #00ff99;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: 'Courier New', Courier, monospace;
-            white-space: pre-wrap;
-            overflow-x: auto;
-            margin-top: 20px;
-        }
-    </style>
+     /* custom bitcoin style block */
+     .btc-code {
+         background:#1e1e1e;
+         color:#00ff99;
+         padding:14px;
+         border-radius: 8px;
+         font-family: "Courier New", Courier, monospace;
+         white-space: pre-wrap;
+         margin-top: 20px;
+     }
+ </style>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to Qian Zhou's Webpage</h1>
-        <p>I’m a student in ISG, originally from Nanjing.</p>
-    </header>
+ <header>
+     <h1>Welcome to Qian Zhou's Webpage</h1>
+     <p>I’m a student in ISG, originally from Nanjing.</p>
+ </header>
 
-    <main>
-        <section>
-            <h2>My Hobbies</h2>
-            <ul>
-                <li>Fitness</li>
-                <li>Traveling</li>
-                <li>Blockchain</li>
-                <li>Meme Coin Developer</li>
-            </ul>
-        </section>
+ <main>
+     <!-- My hobbies, I love crypto stuff :) -->
+     <section>
+         <h2>My Hobbies</h2>
+         <ul>
+             <li>Fitness</li>
+             <li>Traveling</li>
+             <li>Blockchain</li>
+             <li>Meme Coin Developer</li>
+         </ul>
+     </section>
 
-        <section>
-            <h2>Doge Vibes</h2>
-            <div class="centered">
-                <img src="https://tse1.mm.bing.net/th?id=OIP.Tass1qcDI2Tg-cimR0Y3_wAAAA&pid=Api" alt="Real Doge Meme" width="250">
-                <p>Such meme. Much wow.</p>
-            </div>
-        </section>
+     <section>
+         <h2>Doge Vibes</h2>
+         <div class="center-box">
+             <img src="https://tse1.mm.bing.net/th?id=OIP.Tass1qcDI2Tg-cimR0Y3_wAAAA&pid=Api" width="250" alt="Real Doge Meme">
+             <p>Such meme. Much wow.</p>
+         </div>
+     </section>
 
-        <section>
-            <h2>My Meme Coin Project</h2>
-            <p>This is a meme coin I launched 6 months ago.  
-                You can check it out here: 
-                <a href="https://himonsol.webby.fun" target="_blank">himonsol.webby.fun</a>
-            </p>
-        </section>
+     <section>
+         <h2>My Meme Coin Project</h2>
+         <p>This is a meme coin I launched 6 months ago.  
+            You can check it out here: 
+            <a href="https://himonsol.webby.fun" target="_blank">himonsol.webby.fun</a>
+         </p>
+     </section>
 
-        <section>
-            <h2>Favorite Book</h2>
-            <p>One of my favorite books is 
-                <a href="https://www.goodreads.com/book/show/25541028-elon-musk">Elon Musk’s biography</a>.
-            </p>
-        </section>
+     <!-- fav book: Elon inspired me! -->
+     <section>
+         <h2>Favorite Book</h2>
+         <p>One of my favorite books is 
+            <a href="https://www.goodreads.com/book/show/25541028-elon-musk">Elon Musk’s biography</a>.
+         </p>
+     </section>
 
-        <section>
-            <h2>About Bitcoin</h2>
-            <div class="centered">
-                <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" alt="Bitcoin Logo" width="200">
-            </div>
-        </section>
+     <section>
+         <h2>About Bitcoin</h2>
+         <div class="center-box">
+             <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" width="200" alt="Bitcoin Logo">
+         </div>
+     </section>
 
-        <section>
-            <h2>Bitcoin Genesis Block</h2>
-            <pre class="code-block">
+     <section>
+         <h2>Bitcoin Genesis Block</h2>
+         <pre class="btc-code">
 Block Height: 0
 Timestamp: 2009-01-03 18:15:05
 Hash:
@@ -114,12 +118,13 @@ Difficulty: 1
 
 Coinbase Data:
 "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"
-            </pre>
-        </section>
-    </main>
+         </pre>
+     </section>
+ </main>
 
-    <footer>
-        <p>Thanks for visiting my site!</p>
-    </footer>
+ <footer>
+     <p>Thanks for visiting my site!</p>
+     <!-- site made by me :) -->
+ </footer>
 </body>
 </html>
